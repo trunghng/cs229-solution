@@ -44,7 +44,8 @@ def similarity_cal(member, centroid):
     return np.linalg.norm(member - centroid)**2
 
 
-X = read_file('./X.dat')
-X = np.array(X, dtype=np.float64)
-k = 3
-kmeans(X, k)
+if __name__ == '__main__':
+    X = read_file('./X.dat')
+    X = np.array(X, dtype=np.float64)
+    k = 3
+    kmeans(X, k)
